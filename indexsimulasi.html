@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CBT SSW FULL SYSTEM</title>
+<title>Simulasi Ujian SSW PM</title>
 <link rel="stylesheet" href="stylesimulasi.css">
 
 </head>
@@ -132,35 +132,58 @@
 </div>
 
 <div id="cbt" style="display:none;">
+
   <!-- Bagian Tombol Control -->
-  <div style="padding: 10px; background: #dfe6ec; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc;">
+  <div style="
+    padding:10px;
+    background:#dfe6ec;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #ccc;
+  ">
     
+    <!-- Tombol Sidebar -->
     <button id="btn-toggle" onclick="toggleSidebar()" style="
-  background: #2c3e50; 
-  color: white; 
-  border: none; 
-  padding: 10px 15px; 
-  cursor: pointer; 
-  border-radius: 5px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;">
-  
-  <span id="icon-toggle">✕</span>
-  <span id="text-toggle">Tutup</span>
+      background:#2c3e50;
+      color:white;
+      border:none;
+      padding:10px 15px;
+      cursor:pointer;
+      border-radius:5px;
+      font-weight:bold;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    ">
+      <span id="icon-toggle">✕</span>
+      <span id="text-toggle">Tutup</span>
+    </button>
 
-</button>
+    <!-- Area kanan -->
+    <div style="
+      display:flex;
+      justify-content:flex-end;
+      width:100%;
+      padding-right:20px;
+    ">
+      
+      <!-- Timer -->
+      <div class="timer-wrapper">
+        <button id="btn-pause"
+                class="btn-pause"
+                onclick="togglePause()">
+          ⏸
+        </button>
 
-<div style="display: flex; justify-content: flex-end; width: 100%; padding-right: 20px;">
-    
-    <!-- Div kecil ini yang bikin tombol & teks nempel (gap: 5px) -->
-    <div class="timer-wrapper">
-    <button id="btn-pause" class="btn-pause" onclick="togglePause()">⏸</button>
-    <div id="timer">Waktu: 70:00</div>
+        <div id="timer">
+          Waktu: 70:00
+        </div>
+      </div>
 
+    </div>
 
-</div>
+  </div>
 
   <div class="container">
     <div class="sidebar-wrapper" id="sidebar-konten">
