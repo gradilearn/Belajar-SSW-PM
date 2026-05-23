@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulasi Ujian SSW PM</title>
+<title>CBT SSW FULL SYSTEM</title>
 <link rel="stylesheet" href="stylesimulasi.css">
 
 </head>
@@ -2924,7 +2924,824 @@ const paket7 = [
     m: "Saat memotong daging dengan mesin pengiris (slicer) tanpa penutup pengaman, tangan kanan hampir terpotong oleh bilah yang berputar. Selain memasang penutup pengaman, cara memegang daging seperti apa yang baik untuk mencegah kecelakaan? Pilih satu jawaban yang benar."
   },
 ];
-const paket8 = []; const paket9 = [];
+const paket8 = 
+[
+  {
+    "t": "機械の刃や食材に直接触れる部分は、どのようにする必要がありますか。",
+    "p": [
+      "触れたままでも問題ありません。",
+      "洗浄後に消毒しなければいけません。",
+      "洗浄だけで十分です。"
+    ],
+    "b": 1,
+    "m": "Bagian yang menyentuh langsung bahan makanan atau pisau mesin harus diperlakukan bagaimana?"
+  },
+  {
+    "t": "ノロウイルスを消毒するために使うべき消毒液は何ですか。",
+    "p": [
+      "アルコール消毒液",
+      "酸素系漂白剤",
+      "次亜塩素酸ナトリウム溶液（200ppm）"
+    ],
+    "b": 2,
+    "m": "Cairan disinfektan apa yang harus digunakan untuk mendisinfeksi Norovirus?"
+  },
+  {
+    "t": "加熱調理後、食品をすぐに冷やさなければならない理由は何ですか。",
+    "p": [
+      "食品の栄養価が高くなるから",
+      "セレウス菌やウェルシュ菌が、加熱後に温度が下がる間に増えてしまうことがあるから",
+      "食品が冷たくなって食べやすくなるから"
+    ],
+    "b": 1,
+    "m": "Apa alasan makanan harus segera didinginkan setelah dimasak dengan pemanasan?"
+  },
+  {
+    "t": "セレウス菌が原因となる食中毒の症状は何ですか。",
+    "p": [
+      "頭痛、めまい、倦怠感",
+      "吐き気、おう吐、腹痛、下痢",
+      "発熱、咳、鼻水"
+    ],
+    "b": 1,
+    "m": "Apa gejala keracunan makanan yang disebabkan oleh bakteri Bacillus cereus (Cereus-kin)?"
+  },
+  {
+    "t": "カビの胞子について誤っているのはどれですか。",
+    "p": [
+      "カビの胞子はどこにでも存在している",
+      "カビの胞子は完全になくすことができない",
+      "カビの胞子は特定の場所にしか存在しない"
+    ],
+    "b": 2,
+    "m": "Mana pernyataan yang SALAH mengenai spora jamur?"
+  },
+  {
+    "t": "食中毒菌が食品中で増えないために必要な条件はどれですか。",
+    "p": [
+      "温度、水分、栄養",
+      "高温、高湿、栄養",
+      "低温、乾燥、栄養"
+    ],
+    "b": 0,
+    "m": "Mana kondisi yang diperlukan agar bakteri keracunan makanan tidak berkembang biak di dalam makanan?"
+  },
+  {
+    "t": "作業場に入る際、してはいけないことはどれですか。",
+    "p": [
+      "指輪やアクセサリーをつけて入る",
+      "爪を短く切る",
+      "作業に必要でないものを持ち込まない"
+    ],
+    "b": 0,
+    "m": "Apa hal yang TIDAK BOLEH dilakukan saat memasuki area kerja?"
+  },
+  {
+    "t": "作業場で正しく守るべきことはどれですか。",
+    "p": [
+      "作業服を正しく着用する",
+      "暑いときには帽子を脱ぐ",
+      "袖をまくって作業する"
+    ],
+    "b": 0,
+    "m": "Apa hal yang harus dipatuhi dengan benar di area kerja?"
+  },
+  {
+    "t": "「消費期限」とは何ですか。",
+    "p": [
+      "加工食品を未開封で決められた条件で保存した場合に、食べたり使ったりできる期間の最後の日",
+      "加工食品をどんな条件でも食べられる日",
+      "加工食品を開封後すぐに食べるべき日"
+    ],
+    "b": 0,
+    "m": "Apa yang dimaksud dengan 'Tanggal Kadaluarsa' (Shouhi Kigen)?"
+  },
+  {
+    "t": "アレルギー反応の症状ではないものはどれですか。",
+    "p": [
+      "かゆみやじんましん",
+      "体が急に強くなること",
+      "鼻水やくしゃみが止まらないこと"
+    ],
+    "b": 1,
+    "m": "Mana yang BUKAN merupakan gejala dari reaksi alergi?"
+  },
+  {
+    "t": "ヒスタミンの増加を防ぐために必要なことは何ですか。",
+    "p": [
+      "魚を洗わずに保存する",
+      "魚を常温で保管する",
+      "魚をすぐに冷蔵または冷凍する"
+    ],
+    "b": 2,
+    "m": "Apa yang diperlukan untuk mencegah peningkatan kadar histamin pada ikan?"
+  },
+  {
+    "t": "HACCPにおける「重要管理点（CCP）」について正しい説明はどれですか。",
+    "p": [
+      "単に食品の衛生管理だけでなく、最も重要な工程を管理するための基準を決定する",
+      "単一の管理点で十分に危害要因を取り除くことができる",
+      "すべての管理点が重要であるため、CCPは1つに絞られる"
+    ],
+    "b": 0,
+    "m": "Mana penjelasan yang benar mengenai 'Titik Kendali Kritis (CCP)' dalam HACCP?"
+  },
+  {
+    "t": "アレルギー物質を含む原材料を使った加工食品には、何を示す必要がありますか。",
+    "p": [
+      "特定原材料に準ずるもの（推奨）",
+      "特定原材料（義務）",
+      "原材料の産地"
+    ],
+    "b": 1,
+    "m": "Pada makanan olahan yang menggunakan bahan baku mengandung zat alergen, apa yang wajib dicantumkan?"
+  },
+  {
+    "t": "薬剤を使う殺菌について、次の中で正しいものはどれですか。",
+    "p": [
+      "薬剤をつかう殺菌は加熱処理が必要ない",
+      "薬剤を使う殺菌には薬剤の濃度と処理時間が重要である",
+      "薬剤を使う殺菌は、薬剤の種類に関係なく同じ効果がある"
+    ],
+    "b": 1,
+    "m": "Mengenai sterilisasi menggunakan bahan kimia (obat), mana hal yang benar berikut ini?"
+  },
+  {
+    "t": "冷蔵庫や冷凍庫の棚や床をどのように管理しますか。",
+    "p": [
+      "定期的に清掃して、清潔に保つ",
+      "使う前だけ掃除する",
+      "掃除は必要ない"
+    ],
+    "b": 0,
+    "m": "Bagaimana cara mengelola rak dan lantai pada kulkas atau freezer?"
+  },
+  {
+    "t": "「生物的危害要因」の中で、病気の原因となる細菌やウイルスは何と呼ばれますか。",
+    "p": [
+      "有害生物",
+      "病原性微生物",
+      "殺菌微生物"
+    ],
+    "b": 1,
+    "m": "Di antara 'bahaya biologis', bakteri dan virus yang menyebabkan penyakit disebut apa?"
+  },
+  {
+    "t": "HACCPとは、製品の安全のために何をすることですか。正しいものを一つ選びなさい。",
+    "p": [
+      "完成した製品を検査する",
+      "原材料の受け入れを集中力に管理する",
+      "危険要因を明確にして重要点を管理する"
+    ],
+    "b": 2,
+    "m": "Apa yang dimaksud dengan HACCP demi keselamatan produk? Pilihlah satu jawaban yang benar."
+  },
+  {
+    "t": "食品製造工場で発生する労働災害の約60％はどの3つの事故ですか。",
+    "p": [
+      "転倒、はさまれ、巻き込まれ",
+      "転倒、はさまれ・巻き込まれ、切れ・こすれ",
+      "切れ、こすれ、転倒"
+    ],
+    "b": 1,
+    "m": "Sekitar 60% kecelakaan kerja yang terjadi di pabrik manufaktur makanan adalah tiga kecelakaan yang mana?"
+  },
+  {
+    "t": "機械や器具を洗浄するときに、どのようにしますか。正しいものを一つ選びなさい。",
+    "p": [
+      "洗浄剤の濃度を確認する",
+      "洗浄する部分を、日によって変える",
+      "洗浄剤で洗った後、洗い流さずに乾かす"
+    ],
+    "b": 0,
+    "m": "Saat mencuci mesin atau peralatan, apa yang harus dilakukan? Pilihlah satu jawaban yang benar."
+  },
+  {
+    "t": "繰り返して重いものを運ぶと、どのようなことが起こる可能性がありますか。",
+    "p": [
+      "腰痛になりやすくなる",
+      "肩こりが解消される",
+      "体が健康になる"
+    ],
+    "b": 0,
+    "m": "Jika memindahkan barang berat secara berulang-ulang, kemungkinan apa yang dapat terjadi?"
+  },
+  {
+    "t": "作業中の行動について、間違っているものを一つ選びなさい。",
+    "p": [
+      "危険な作業をしている人を見たら、声をかける",
+      "危険な場所を見つけたら、責任者にすぐに報告する",
+      "作業場を離れる時間が短い時は、黙って離れてもいい"
+    ],
+    "b": 2,
+    "m": "Mengenai tindakan selama bekerja, pilihlah satu jawaban yang SALAH."
+  },
+  {
+    "t": "食中毒菌がほとんど増えない温度は何度以下ですか。",
+    "p": [
+      "-5℃以下",
+      "4℃以下",
+      "10℃以下"
+    ],
+    "b": 1,
+    "m": "Berapa derajat suhu di mana bakteri keracunan makanan hampir tidak dapat berkembang biak?"
+  },
+  {
+    "t": "食品の危害要因を分析し、製造する食品に危害要因が含まれないようにするために必要な管理方法を判断するのは、次のうちどれですか。",
+    "p": [
+      "食品添加物の選定",
+      "ハザード分析と重要管理点（HACCP）",
+      "製造過程の温度管理"
+    ],
+    "b": 1,
+    "m": "Mana di antara berikut yang menganalisis bahaya pangan dan menentukan metode kendali yang diperlukan agar bahaya tidak terbawa ke produk makanan?"
+  },
+  {
+    "t": "ゴミを作業場から出す際に気をつけるべきことは何ですか。",
+    "p": [
+      "ゴミを出した後、清掃や消毒を行わないこと",
+      "ゴミを出すために通路を使った後、掃除・洗浄・消毒を行うこと",
+      "ゴミを出すために通路を使う時間を長くすること"
+    ],
+    "b": 1,
+    "m": "Apa yang harus diperhatikan saat membuang sampah keluar dari area kerja?"
+  },
+  {
+    "t": "食肉、魚介類は何度以下で保管すればいいですか。",
+    "p": [
+      "4℃以下",
+      "7℃以下",
+      "15℃以下"
+    ],
+    "b": 0,
+    "m": "Daging dan produk laut sebaiknya disimpan pada suhu berapa derajat ke bawah?"
+  },
+  {
+    "t": "次の中で、口の中やのどに傷ができる物理的危害要因ではないものはどれですか。",
+    "p": [
+      "虫や髪の毛、紙片",
+      "金属の破片",
+      "ガラスの破片"
+    ],
+    "b": 0,
+    "m": "Mana di antara berikut yang BUKAN merupakan bahaya fisik yang dapat melukai bagian dalam mulut atau tenggorokan?"
+  },
+  {
+    "t": "動いている機械に挟まれたり、巻き込まれたりする事故を防ぐためには、どうすればよいですか。間違っているものを一つ選びなさい。",
+    "p": [
+      "機械の清掃、修理は、機械を止めてから行う",
+      "作業に邪魔な時は、機械の囲いや安全装置をはずす",
+      "機械を止めた時は、「修理中」などの表示で周囲に知らせる"
+    ],
+    "b": 1,
+    "m": "Bagaimana cara mencegah kecelakaan terjepit atau tergulung mesin yang sedang bergerak? Pilihlah satu jawaban yang SALAH."
+  },
+  {
+    "t": "手を洗う必要がない場合はどれですか。",
+    "p": [
+      "食品に直接触れる作業を始める前",
+      "生の食品に触れた後、他の食品や器具に触れる前",
+      "作業中に何も触らない場合"
+    ],
+    "b": 2,
+    "m": "Kapan kondisi di mana Anda TIDAK PERLU mencuci tangan?"
+  },
+  {
+    "t": "プラスチックについて正しいことはどれですか。",
+    "p": [
+      "プラスチックはX線では見つけにくいため、X線検出機を使用することが重要です",
+      "プラスチックはX線では見つけにくいため、機械や設備から食品に混入しないようにしなければいけません",
+      "プラスチックはX線で簡単に探すことができるため、特別な対策は不要です"
+    ],
+    "b": 1,
+    "m": "Mana hal yang benar mengenai material plastik?"
+  },
+  {
+    "t": "食品製造業者が実施する微生物検査において、一般的に調べられるものはどれですか。",
+    "p": [
+      "一般生菌数、大腸菌、大腸菌群",
+      "脂肪分、糖分、塩分",
+      "ビタミンC含量、カルシウム含量"
+    ],
+    "b": 0,
+    "m": "Dalam pemeriksaan mikroba yang dilakukan oleh produsen makanan, apa yang umumnya diperiksa?"
+  },
+  {
+    "t": "「冷凍」とは、次のどれを指しますか。",
+    "p": [
+      "食品を加熱して保存性を高めること",
+      "食品を冷やして凍らせることで保存性を高めること",
+      "食品を保存するために常に温かい状態に保つこと"
+    ],
+    "b": 1,
+    "m": "Apa yang dimaksud dengan proses pembekuan (Reitou)?"
+  },
+  {
+    "t": "10％の次亜塩素酸ナトリウム（NaClO）溶液があります。200ppm（0.02％）の次亜塩素酸ナトリウム溶液を1L作るとき、この溶液と水はそれぞれ何ml必要ですか。正しいものを一つ選びなさい。",
+    "p": [
+      "溶液：1ml、水：999ml",
+      "溶液：2ml、水：998ml",
+      "溶液：10ml、水：990ml"
+    ],
+    "b": 1,
+    "m": "Terdapat larutan natrium hipoklorit (NaClO) 10%. Saat membuat 1L larutan natrium hipoklorit dengan kadar 200ppm (0.02%), berapa ml larutan induk dan air yang masing-masing dibutuhkan?"
+  },
+  {
+    "t": "500グラムのそうめんを作るためには、300グラムの小麦粉が必要です。では、3キログラムの小麦粉からどれだけのそうめんを作ることができるでしょうか。",
+    "p": [
+      "3キログラムのそうめん",
+      "5キログラムのそうめん",
+      "10キログラムのそうめん"
+    ],
+    "b": 1,
+    "m": "Untuk membuat 500 gram mi Somen, dibutuhkan 300 gram tepung terigu. Jika ada 3 kilogram tepung terigu, berapa banyak mi Somen yang bisa dibuat?"
+  },
+  {
+    "t": "作業台でパンをスライスしている際、手でパンを押さえながらスライスしていたため、指がスライサーの刃に触れそうになりました。この事故を防ぐために、何をすればいいですか。正しいものを一つ選びなさい。",
+    "img": "https://lh3.googleusercontent.com/d/1_K_t9heSA6xCaacBgnDbx-8XVkTdNx6K",
+    "p": [
+      "スライサーを使用する際は、押し板を使用してパンを押し出す",
+      "スライサーを使用する際は、両手を使ってパンを押し出す",
+      "スライサーを使用する際は、左手を使ってパンを押し出す"
+    ],
+    "b": 0,
+    "m": "Saat mengiris roti di atas meja kerja menggunakan tangan untuk mendorong roti, jari hampir menyentuh pisau pemotong (slicer). Untuk mencegah kecelakaan ini, apa yang sebaiknya dilakukan?"
+  },
+  {
+    "t": "用具を専用のボックスに保管する理由は何ですか。正しいものを選びなさい。",
+    "img": "https://lh3.googleusercontent.com/d/1qFy1YtV-lPH5kFa6xbeJ8hndsmdou5l8",
+    "p": [
+      "飾るためです",
+      "ネジや壊れた用具が製品に混入しないためです",
+      "どこに保管しているかすぐわかるためです"
+    ],
+    "b": 1,
+    "m": "Apa alasan menyimpan peralatan kerja di dalam kotak khusus? Pilihlah jawaban yang benar."
+  },
+  {
+    "t": "清掃用具の整理整頓について、正しいものを選びなさい。",
+    "img": "https://lh3.googleusercontent.com/d/100ZAE7IsBWY3cGVNhHNRTrtH8puqH3BE",
+    "p": [
+      "スポンジなどの清掃用具を「濡れたまま」「汚れたまま」にしておく",
+      "食品からできるだけ離れた、風通しの良い場所に保管する",
+      "ナイフと一緒に保管する"
+    ],
+    "b": 1,
+    "m": "Mengenai kerapian dan keteraturan alat-alat pembersih, pilihlah jawaban yang benar."
+  },
+  {
+    "t": "なぜパイプの下も清掃しなければならないのですか。",
+    "img": "https://lh3.googleusercontent.com/d/1QVKLSOPw-8HknLruNUGh2z5tODCTdxIa",
+    "p": [
+      "誰も清掃しないところだから",
+      "食中毒のおそれがあるから",
+      "カビなどの微生物や虫が発生するおそれがあるから"
+    ],
+    "b": 2,
+    "m": "Mengapa bagian bawah pipa juga harus dibersihkan?"
+  },
+  {
+    "t": "どのような状況で事故が発生したのですか。",
+    "img": "https://lh3.googleusercontent.com/d/1rgYfYp-kzxFoVmqyNd5YO1ZWqBeS0aG-",
+    "p": [
+      "フォークリフトが通過する際に、横から来た人とぶつかりそうになった",
+      "倉庫の入り口でフォークリフトが停止していた",
+      "フォークリフトが荷物を運んでいる最中に障害物にぶつかった"
+    ],
+    "b": 0,
+    "m": "(Berdasarkan gambar ilustrasi) Dalam situasi seperti apa kecelakaan tersebut hampir terjadi?"
+  },
+  {
+    "t": "熱中症を防ぐための対策として正しいものはどれですか。",
+    "img": "https://lh3.googleusercontent.com/d/19S3EMYIkeO8tLtaR2gXof8uGGqK_C0K5",
+    "p": [
+      "気温や湿度が高いときは、休憩せずに作業を続ける",
+      "汗を吸って乾きやすい衣服を着用する",
+      "冷たい飲み物を避ける"
+    ],
+    "b": 1,
+    "m": "Mana tindakan yang benar sebagai langkah untuk mencegah sengatan panas (heatstroke/netchuusho)?"
+  },
+  {
+    "t": "以下の写真は、棚から商品を取り出し、手で持って降りようとしたときに、脚立がぐらついてバランスを崩し、落ちそうになった様子です。この事故を防ぐために、どうしたらいいですか。正しいものを一つ選びなさい。",
+    "img": "https://lh3.googleusercontent.com/d/10Fpvn5HvAZCBZHdL_rPRIsqPgjO8XcWR",
+    "p": [
+      "脚立は、必ず開き止めをセットして使用する",
+      "降りるときに両手で脚立をつかむため、商品を床に投げる",
+      "脚立は危険なので、できるだけ使わないようにする"
+    ],
+    "b": 0,
+    "m": "Foto berikut memperlihatkan keadaan seseorang yang hampir jatuh dari tangga lipat karena tangga goyah saat mengambil barang dari rak dan membawanya turun. Apa yang harus dilakukan untuk mencegah kecelakaan ini?"
+  }
+];
+const paket9 = [
+  {
+    "t": "消<ruby>費<rt>ひ</rt></ruby>者<ruby>に<rt></rt></ruby>安<ruby>全<rt>ぜん</rt></ruby>な食<ruby>品<rt>ひん</rt></ruby>を提<ruby>供<rt>きょう</rt></ruby>するためには、3条<ruby>件<rt>けん</rt></ruby>が必<ruby>要<rt>よう</rt></ruby>です。食<ruby>品<rt>ひん</rt></ruby>の衛<ruby>生<rt>せい</rt></ruby>的<ruby>取<rt>とり</rt></ruby>扱<ruby>い<rt>あつかい</rt></ruby>ときれいな製<ruby>造<rt>ぞう</rt></ruby>環<ruby>境<rt>きょう</rt></ruby>のほかに、もう一つの条<ruby>件<rt>けん</rt></ruby>は何ですか。",
+    "p": [
+      "安<ruby>全<rt>ぜん</rt></ruby>な原<ruby>材<rt>ざい</rt></ruby>料<ruby>料<rt>りょう</rt></ruby>",
+      "効<ruby>果<rt>か</rt></ruby>的なコスト削<ruby>減<rt>げん</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>",
+      "生<ruby>産<rt>さん</rt></ruby>希<ruby>望<rt>ぼう</rt></ruby>と生<ruby>産<rt>さん</rt></ruby>施<ruby>設<rt>せつ</rt></ruby>の面<ruby>積<rt>せき</rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Untuk menyediakan makanan yang aman bagi konsumen, diperlukan 3 syarat. Selain penanganan makanan yang higienis dan lingkungan produksi yang bersih, apa syarat yang satu lagi?"
+  },
+  {
+    "t": "下<ruby>記<rt>き</rt></ruby>のうち、牡<ruby>蠣<rt>かき</rt></ruby>などの二<ruby>枚<rt>まい</rt></ruby>貝<ruby>に<rt></rt></ruby>存<ruby>在<rt>ざい</rt></ruby>し、感<ruby>染<rt>せん</rt></ruby>した人<ruby>が<rt></rt></ruby>調<ruby>理<rt>り</rt></ruby>した食<ruby>品<rt>ひん</rt></ruby>や水<ruby>から<rt></rt></ruby>広<ruby>がりやすい<rt></rt></ruby>食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>の<rt></rt></ruby>原<ruby>因<rt>いん</rt></ruby>はどれですか。",
+    "p": [
+      "黄<ruby>色<rt>おうしょく</rt></ruby>ブドウ球<ruby>菌<rt>きん</rt></ruby>",
+      "サルモネラ菌<ruby>菌<rt>きん</rt></ruby>",
+      "ノロウイルス"
+    ],
+    "b": 2,
+    "m": "Di antara berikut ini, manakah penyebab keracunan makanan yang ada pada kerang-kerangan seperti tiram dan mudah menyebar dari makanan atau air yang dikelola oleh orang yang terinfeksi?"
+  },
+  {
+    "t": "食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>の<rt></rt></ruby>原<ruby>因<rt>いん</rt></ruby>となる微<ruby>生<rt>せい</rt></ruby>物<ruby>を<rt></rt></ruby>防<ruby>ぐ<rt></rt></ruby>ために、三つの原<ruby>則<rt>そく</rt></ruby>を守<ruby>らなければ<rt></rt></ruby>なりません。「ころす」「増<ruby>やさない<rt>ふやさない</rt></ruby>」のほかに、もう一つは何ですか。",
+    "p": [
+      "汚<ruby>染<rt>せん</rt></ruby>させない",
+      "つけない",
+      "増<ruby>殖<rt>しょく</rt></ruby>させない"
+    ],
+    "b": 1,
+    "m": "Untuk mencegah mikroorganisme penyebab keracunan makanan, tiga prinsip harus dipatuhi. Selain \"membunuh\" dan \"tidak membiarkan berkembang biak (meningkat)\", apa yang satu lagi?"
+  },
+  {
+    "t": "カンピロバクター属<ruby>菌<rt>きん</rt></ruby>による食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>の<rt></rt></ruby>原<ruby>因<rt>いん</rt></ruby>になる食<ruby>品<rt>ひん</rt></ruby>はどれですか。",
+    "p": [
+      "野<ruby>菜<rt>さい</rt></ruby>",
+      "鶏<ruby>肉<rt>にく</rt></ruby>",
+      "魚<ruby>介<rt>かい</rt></ruby>類"
+    ],
+    "b": 1,
+    "m": "Makanan manakah yang menjadi penyebab keracunan makanan akibat bakteri genus Campylobacter?"
+  },
+  {
+    "t": "カビが生<ruby>え<rt></rt></ruby>た食<ruby>品<rt>ひん</rt></ruby>はどうすればいいですか。",
+    "p": [
+      "そのまま使<ruby>っ<rt></rt></ruby>てもよい",
+      "必<ruby>ず<rt></rt></ruby>使<ruby>わ<rt></rt></ruby>ない",
+      "洗<ruby>っ<rt></rt></ruby>てから使<ruby>う<rt></rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Apa yang harus dilakukan terhadap makanan yang sudah berjamur?"
+  },
+  {
+    "t": "アニサキスがついている魚<ruby>介<rt>かい</rt></ruby>類<ruby>を<rt></rt></ruby>生<ruby>で<rt></rt></ruby>食<ruby>べ<rt></rt></ruby>ると、どんな症<ruby>状<rt>じょう</rt></ruby>が出<ruby>ます<rt></rt></ruby>か。",
+    "p": [
+      "激<ruby>しい<rt>はげしい</rt></ruby>腹<ruby>痛<rt>つう</rt></ruby>",
+      "頭<ruby>痛<rt>つう</rt></ruby>",
+      "喉<ruby>の<rt></rt></ruby>痛<ruby>み<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Gejala apa yang muncul jika memakan produk laut yang ditempati Anisakis dalam keadaan mentah?"
+  },
+  {
+    "t": "微<ruby>生<rt>せい</rt></ruby>物<ruby>が<rt></rt></ruby>増<ruby>殖<rt>しょく</rt></ruby>しにくい環<ruby>境<rt>きょう</rt></ruby>はどれですか。正<ruby>しい<rt>ただしい</rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "30℃〜40℃で、湿<ruby>度<rt>ど</rt></ruby>が髙<ruby>く<rt></rt></ruby>、汚<ruby>れ<rt></rt></ruby>ている環<ruby>境<rt>きょう</rt></ruby>",
+      "4℃以<ruby>下<rt>か</rt></ruby>で、汚<ruby>れ<rt></rt></ruby>がなく、乾<ruby>燥<rt>そう</rt></ruby>している環<ruby>境<rt>きょう</rt></ruby>",
+      "室<ruby>温<rt>おん</rt></ruby>であり、汚<ruby>れ<rt></rt></ruby>ている環<ruby>境<rt>きょう</rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Manakah lingkungan di mana mikroorganisme sulit berkembang biak? Pilih satu yang benar."
+  },
+  {
+    "t": "作<ruby>業<rt>ぎょう</rt></ruby>服<ruby>に<rt></rt></ruby>ついて何<ruby>を<rt></rt></ruby>注<ruby>意<rt>い</rt></ruby>しなければなりませんか。間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "ポケットやボタンがついている服<ruby>を<rt></rt></ruby>着<ruby>る<rt></rt></ruby>",
+      "汚<ruby>れていない<rt></rt></ruby>作<ruby>業<rt>ぎょう</rt></ruby>服<ruby>と<rt></rt></ruby>汚<ruby>れた<rt></rt></ruby>作<ruby>業<rt>ぎょう</rt></ruby>服<ruby>が<rt></rt></ruby>ロッカーでくっつかないようにする",
+      "上<ruby>着<rt>ぎ</rt></ruby>のすそをズボンに入<ruby>れる<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Apa yang harus diperhatikan mengenai pakaian kerja? Pilih satu yang salah."
+  },
+  {
+    "t": "作<ruby>業<rt>ぎょう</rt></ruby>する前<ruby>に<rt></rt></ruby>何<ruby>を<rt></rt></ruby>確<ruby>認<rt>にん</rt></ruby>しなければなりませんか。",
+    "p": [
+      "作<ruby>業<rt>ぎょう</rt></ruby>場<ruby>所<rt>しょ</rt></ruby>と作<ruby>業<rt>ぎょう</rt></ruby>内<ruby>容<rt>よう</rt></ruby>",
+      "一<ruby>緒<rt>しょ</rt></ruby>に働<ruby>く<rt></rt></ruby>人<ruby>の<rt></rt></ruby>名<ruby>前<rt>まえ</rt></ruby>",
+      "消<ruby>毒<rt>どく</rt></ruby>液<ruby>を<rt></rt></ruby>置<ruby>く<rt></rt></ruby>場<ruby>所<rt>しょ</rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Apa yang harus dipastikan sebelum melakukan pekerjaan?"
+  },
+  {
+    "t": "エアシャワーに入<ruby>る<rt></rt></ruby>のは何<ruby>の<rt></rt></ruby>ためですか。",
+    "p": [
+      "消<ruby>毒<rt>どく</rt></ruby>するため",
+      "髪<ruby>の<rt></rt></ruby>毛<ruby>や<rt></rt></ruby>ほこりを落<ruby>とす<rt></rt></ruby>ため",
+      "体<ruby>を<rt></rt></ruby>きれいにするため"
+    ],
+    "b": 1,
+    "m": "Apa tujuan masuk ke dalam air shower?"
+  },
+  {
+    "t": "5S活<ruby>動<rt>どう</rt></ruby>は、製<ruby>品<rt>ひん</rt></ruby>の安<ruby>全<rt>ぜん</rt></ruby>・品<ruby>質<rt>しつ</rt></ruby>保<ruby>持<rt>じ</rt></ruby>につながる一<ruby>般<rt>ぱん</rt></ruby>衛<ruby>生<rt>せい</rt></ruby>管<ruby>理<rt>り</rt></ruby>の利<ruby>点<rt>てん</rt></ruby>で重<ruby>要<rt>よう</rt></ruby>な活<ruby>動<rt>どう</rt></ruby>です。5Sは「整<ruby>理<rt>り</rt></ruby>」「整<ruby>頓<rt>とん</rt></ruby>」「清<ruby>掃<rt>そう</rt></ruby>」「習<ruby>慣<rt>かん</rt></ruby>」と、もう一つは何ですか。",
+    "p": [
+      "清<ruby>潔<rt>けつ</rt></ruby>",
+      "しつけ",
+      "仕<ruby>方<rt>かた</rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Aktivitas 5S adalah aktivitas penting dalam manajemen higiene umum yang mengarah pada menjaga keselamatan dan kualitas produk. 5S terdiri dari Seiri (Ringkas), Seiton (Rapi), Seiso (Resik), Shitsukan (Habit/Shitsuke), dan satu lagi apa?"
+  },
+  {
+    "t": "作<ruby>業<rt>ぎょう</rt></ruby>者<ruby>が<rt></rt></ruby>移<ruby>動<rt>どう</rt></ruby>中<ruby>に<rt></rt></ruby>フォークリフトとぶつかると、どんなことが起<ruby>こり<rt></rt></ruby>ますか。",
+    "p": [
+      "作<ruby>業<rt>ぎょう</rt></ruby>者<ruby>が<rt></rt></ruby>けがをすることがある",
+      "作<ruby>業<rt>ぎょう</rt></ruby>者<ruby>は<rt></rt></ruby>すぐに回<ruby>復<rt>ふく</rt></ruby>する",
+      "作<ruby>業<rt>ぎょう</rt></ruby>者<ruby>は<rt></rt></ruby>必<ruby>ず<rt></rt></ruby>避<ruby>けられる<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Apa yang akan terjadi jika pekerja bertabrakan dengan forklift saat sedang bergerak/berpindah?"
+  },
+  {
+    "t": "食<ruby>品<rt>ひん</rt></ruby>衛<ruby>生<rt>せい</rt></ruby>法<ruby>の<rt></rt></ruby>規<ruby>定<rt>てい</rt></ruby>では、冷<ruby>凍<rt>とう</rt></ruby>庫<ruby>の<rt></rt></ruby>基<ruby>準<rt>じゅん</rt></ruby>温<ruby>度<rt>ど</rt></ruby>はどれですか。",
+    "p": [
+      "4℃以<ruby>下<rt>か</rt></ruby>",
+      "10℃以<ruby>下<rt>か</rt></ruby>",
+      "-15℃以<ruby>下<rt>か</rt></ruby>"
+    ],
+    "b": 2,
+    "m": "Berdasarkan ketentuan Undang-Undang Sanitasi Makanan, manakah suhu standar untuk freezer?"
+  },
+  {
+    "t": "石<ruby>や<rt></rt></ruby>ガラスなどを検<ruby>査<rt>さ</rt></ruby>する機<ruby>械<rt>かい</rt></ruby>はどれですか。",
+    "p": [
+      "金<ruby>属<rt>ぞく</rt></ruby>検<ruby>出<rt>しゅつ</rt></ruby>器<ruby>器<rt>き</rt></ruby>",
+      "X線<ruby>異<rt>い</rt></ruby>物<ruby>検<rt>しゅつ</rt></ruby>器<ruby>器<rt>き</rt></ruby>",
+      "金<ruby>属<rt>ぞく</rt></ruby>検<ruby>出<rt>しゅつ</rt></ruby>器<ruby>、<rt></rt></ruby>X線<ruby>異<rt>い</rt></ruby>物<ruby>検<rt>しゅつ</rt></ruby>器<ruby>器<rt>き</rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Mesin manakah yang mendeteksi benda asing seperti batu atau kaca?"
+  },
+  {
+    "t": "主<ruby>な<rt></rt></ruby>冷<ruby>却<rt>かく</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>はどれですか。間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "風<ruby>を<rt></rt></ruby>当<ruby>てて<rt></rt></ruby>冷<ruby>やす<rt></rt></ruby>方<ruby>法<rt>ほう</rt></ruby>",
+      "冷<ruby>水<rt>すい</rt></ruby>で冷<ruby>やす<rt></rt></ruby>方<ruby>法<rt>ほう</rt></ruby>",
+      "製<ruby>氷<rt>ひょう</rt></ruby>機<ruby>に<rt></rt></ruby>入<ruby>れて<rt></rt></ruby>冷<ruby>やす<rt></rt></ruby>方<ruby>法<rt>ほう</rt></ruby>"
+    ],
+    "b": 2,
+    "m": "Manakah metode pendinginan yang utama? Pilih satu yang salah."
+  },
+  {
+    "t": "生<ruby>物<rt>ぶつ</rt></ruby>的<ruby>危<rt>き</rt></ruby>害<ruby>要<rt>よう</rt></ruby>因<ruby>に<rt></rt></ruby>含<ruby>まれる<rt></rt></ruby>ものはどれですか。",
+    "p": [
+      "食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>の<rt></rt></ruby>原<ruby>因<rt>いん</rt></ruby>となる細<ruby>菌<rt>きん</rt></ruby>やウイルス、寄<ruby>生<rt>せい</rt></ruby>虫、カビ",
+      "人<ruby>工<rt>こう</rt></ruby>的<ruby>な<rt></rt></ruby>危<ruby>害<rt>き</rt></ruby>要<ruby>因<rt>in</rt></ruby>",
+      "食<ruby>品<rt>ひん</rt></ruby>の保<ruby>存<rt>ぞん</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Apa yang termasuk ke dalam faktor bahaya biologis?"
+  },
+  {
+    "t": "アレルギーの発<ruby>症<rt>しょう</rt></ruby>件<ruby>数<rt>すう</rt></ruby>が特<ruby>に<rt></rt></ruby>多<ruby>い<rt></rt></ruby>8種<ruby>類<rt>るい</rt></ruby>の食<ruby>品<rt>ひん</rt></ruby>はどれですか。",
+    "p": [
+      "くるみ、そば、卵<ruby>卵<rt>たまご</rt></ruby>、落<ruby>花<rt>か</rt></ruby>生、小<ruby>麦<rt>むぎ</rt></ruby>、たまねぎ、えび、牛<ruby>肉<rt>にく</rt></ruby>",
+      "えび、かに、牡<ruby>蠣<rt>かき</rt></ruby>、にんじん、牛<ruby>肉<rt>にく</rt></ruby>、りんご、オレンジ、くるみ",
+      "くるみ、えび、かに、小<ruby>麦<rt>むぎ</rt></ruby>、そば、卵<ruby>卵<rt>たまご</rt></ruby>、乳<ruby>乳<rt>にゅう</rt></ruby>、落<ruby>花<rt>か</rt></ruby>生"
+    ],
+    "b": 2,
+    "m": "Manakah 8 jenis makanan yang memiliki jumlah kasus kejadian alergi paling banyak?"
+  },
+  {
+    "t": "薬<ruby>剤<rt>ざい</rt></ruby>の管<ruby>理<rt>り</rt></ruby>について、間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "どこで保<ruby>管<rt>かん</rt></ruby>しても良い",
+      "薬<ruby>剤<rt>ざい</rt></ruby>の使<ruby>用<rt>よう</rt></ruby>量や残った量を内<ruby>出<rt>しゅつ</rt></ruby>庫<ruby>台<rt>だい</rt></ruby>帳<ruby>に<rt></rt></ruby>書いて記<ruby>録<rt>ろく</rt></ruby>する",
+      "薬<ruby>剤<rt>ざい</rt></ruby>の容<ruby>器<rt>き</rt></ruby>には、必<ruby>ず<rt></rt></ruby>薬<ruby>剤<rt>ざい</rt></ruby>名、使<ruby>用<rt>よう</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>などを書く"
+    ],
+    "b": 0,
+    "m": "Mengenai manajemen bahan kimia (obat-obatan), pilih satu yang salah."
+  },
+  {
+    "t": "食<ruby>品<rt>ひん</rt></ruby>製<ruby>造<rt>ぞう</rt></ruby>工<ruby>場<rt>じょう</rt></ruby>で交<ruby>差<rt>さ</rt></ruby>汚<ruby>染<rt>せん</rt></ruby>を防<ruby>止<rt>し</rt></ruby>するために行<ruby>われる<rt></rt></ruby>管<ruby>理<rt>り</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>は何ですか。",
+    "p": [
+      "自<ruby>動<rt>どう</rt></ruby>掃<ruby>除<rt>じ</rt></ruby>ロボットの導<ruby>入<rt>にゅう</rt></ruby>",
+      "区<ruby>分<rt>ぶん</rt></ruby>衛<ruby>生<rt>せい</rt></ruby>管<ruby>理<rt>り</rt></ruby>（ゾーニング）",
+      "工<ruby>場<rt>じょう</rt></ruby>内<ruby>に<rt></rt></ruby>ペットを置<ruby>く<rt></rt></ruby>こと"
+    ],
+    "b": 1,
+    "m": "Apa metode manajemen yang dilakukan untuk mencegah kontaminasi silang di pabrik pembuatan makanan?"
+  },
+  {
+    "t": "HACCPによる衛<ruby>生<rt>せい</rt></ruby>管<ruby>理<rt>り</rt></ruby>において、危<ruby>害<rt>き</rt></ruby>要<ruby>因<rt>いん</rt></ruby>を分<ruby>析<rt>せき</rt></ruby>する方<ruby>法<rt>ほう</rt></ruby>はどれですか。",
+    "p": [
+      "食<ruby>品<rt>ひん</rt></ruby>の栄<ruby>養<rt>よう</rt></ruby>価を調<ruby>べる<rt></rt></ruby>",
+      "食<ruby>品<rt>ひん</rt></ruby>の原<ruby>材<rt>ざい</rt></ruby>料や製<ruby>造<rt>ぞう</rt></ruby>工<ruby>程<rt>てい</rt></ruby>を調<ruby>べ<rt></rt></ruby>、危<ruby>害<rt>き</rt></ruby>要<ruby>因<rt>in</rt></ruby>を分<ruby>析<rt>せき</rt></ruby>する",
+      "食<ruby>品<rt>ひん</rt></ruby>の賞<ruby>味<rt>み</rt></ruby>期<ruby>限<rt>げん</rt></ruby>を決<ruby>定<rt>てい</rt></ruby>する"
+    ],
+    "b": 1,
+    "m": "Dalam manajemen higiene berdasarkan HACCP, manakah metode untuk menganalisis faktor bahaya?"
+  },
+  {
+    "t": "食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>予<rt>ぼう</rt></ruby>防<ruby>の<rt></rt></ruby>基<ruby>本<rt>ほん</rt></ruby>原<ruby>則<rt>そく</rt></ruby>の一つはどれですか。",
+    "p": [
+      "食<ruby>品<rt>ひん</rt></ruby>に食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>菌<rt>きん</rt></ruby>を「つけない」",
+      "食<ruby>品<rt>ひん</rt></ruby>を生<ruby>で<rt></rt></ruby>食<ruby>べる<rt></rt></ruby>",
+      "食<ruby>品<rt>ひん</rt></ruby>を冷<ruby>凍<rt>とう</rt></ruby>保<ruby>存<rt>ぞん</rt></ruby>しない"
+    ],
+    "b": 0,
+    "m": "Manakah salah satu prinsip dasar pencegahan keracunan makanan?"
+  },
+  {
+    "t": "HACCPにおいて作<ruby>業<rt>ぎょう</rt></ruby>現<ruby>場<rt>ば</rt></ruby>に任<ruby>せて<rt></rt></ruby>いる重<ruby>要<rt>よう</rt></ruby>なことは何ですか。間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "モニタリング結<ruby>果<rt>か</rt></ruby>を知<ruby>る<rt></rt></ruby>",
+      "管<ruby>理<rt>り</rt></ruby>基<ruby>準<rt>じゅん</rt></ruby>の設<ruby>定<rt>てい</rt></ruby>値を知<ruby>る<rt></rt></ruby>",
+      "重<ruby>要<rt>よう</rt></ruby>管<ruby>理<rt>り</rt></ruby>点<ruby>を<rt></rt></ruby>監<ruby>視<rt>し</rt></ruby>する"
+    ],
+    "b": 0,
+    "m": "Apa hal penting yang diserahkan kepada area kerja dalam HACCP? Pilih satu yang salah."
+  },
+  {
+    "t": "決<ruby>め<rt></rt></ruby>られた作<ruby>業<rt>ぎょう</rt></ruby>手<ruby>順<rt>じゅん</rt></ruby>を守<ruby>る<rt></rt></ruby>際の注<ruby>意<rt>い</rt></ruby>事<ruby>項<rt>こう</rt></ruby>として、間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "作<ruby>業<rt>ぎょう</rt></ruby>手<ruby>順<rt>じゅん</rt></ruby>書に書かれている作<ruby>業<rt>ぎょう</rt></ruby>手<ruby>順<rt>じゅん</rt></ruby>を繰<ruby>り<rt></rt></ruby>返<ruby>し<rt></rt></ruby>練<ruby>習<rt>しゅう</rt></ruby>し、よく覚<ruby>える<rt></rt></ruby>",
+      "作<ruby>業<rt>ぎょう</rt></ruby>手<ruby>順<rt>じゅん</rt></ruby>が分<ruby>から<rt></rt></ruby>ないときは、とりあえず対<ruby>応<rt>おう</rt></ruby>する",
+      "慣<ruby>れ<rt></rt></ruby>による怪<ruby>我<rt>が</rt></ruby>に注<ruby>意<rt>い</rt></ruby>し、軽<ruby>はず<rt></rt></ruby>みな動<ruby>作<rt>さ</rt></ruby>や強<ruby>引<rt>いん</rt></ruby>な動<ruby>作<rt>さ</rt></ruby>をしない"
+    ],
+    "b": 1,
+    "m": "Sebagai hal yang perlu diperhatikan saat mematuhi prosedur kerja yang telah ditetapkan, pilih satu yang salah."
+  },
+  {
+    "t": "5S活<ruby>動<rt>どう</rt></ruby>と労<ruby>働<rt>どう</rt></ruby>安<ruby>全<rt>ぜん</rt></ruby>との関<ruby>係<rt>けい</rt></ruby>で間<ruby>違<rt>ちが</rt></ruby>っている組み合わせはどれですか。一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "整<ruby>理<rt>り</rt></ruby>：作<ruby>業<rt>ぎょう</rt></ruby>効<ruby>率<rt>りつ</rt></ruby>が上<ruby>がり<rt></rt></ruby>、転<ruby>倒<rt>とう</rt></ruby>災<ruby>害<rt>がい</rt></ruby>の危<ruby>険<rt>けん</rt></ruby>も減<ruby>ります<rt></rt></ruby>",
+      "清<ruby>潔<rt>けつ</rt></ruby>：製<ruby>品<rt>ひん</rt></ruby>の品<ruby>質<rt>しつ</rt></ruby>向<ruby>上<rt>じょう</rt></ruby>、食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>予<rt>ぼう</rt></ruby>防、異<ruby>物<rt>ぶつ</rt></ruby>混<ruby>入<rt>にゅう</rt></ruby>防<ruby>止<rt>し</rt></ruby>に効<ruby>果<rt>か</rt></ruby>があります",
+      "習<ruby>慣<rt>かん</rt></ruby>：無<ruby>駄<rt>だ</rt></ruby>な時<ruby>間<rt>かん</rt></ruby>が減<ruby>り<rt></rt></ruby>、製<ruby>品<rt>ひん</rt></ruby>の品<ruby>質<rt>しつ</rt></ruby>も向<ruby>上<rt>じょう</rt></ruby>されます"
+    ],
+    "b": 2,
+    "m": "Manakah kombinasi yang salah mengenai hubungan antara aktivitas 5S dan keselamatan kerja? Pilih satu."
+  },
+  {
+    "t": "異<ruby>常<rt>じょう</rt></ruby>事<ruby>態<rt>たい</rt></ruby>に気<ruby>が<rt></rt></ruby>ついたとき、まず何<ruby>を<rt></rt></ruby>しますか。",
+    "p": [
+      "周<ruby>り<rt></rt></ruby>にいる責<ruby>任<rt>にん</rt></ruby>者<ruby>や<rt></rt></ruby>作<ruby>業<rt>ぎょう</rt></ruby>者<ruby>に<rt></rt></ruby>大<ruby>きな<rt></rt></ruby>声<ruby>で<rt></rt></ruby>知<ruby>らせる<rt></rt></ruby>",
+      "自<ruby>分<rt>ぶん</rt></ruby>だけで機<ruby>械<rt>かい</rt></ruby>を直<ruby>す<rt></rt></ruby>",
+      "何<ruby>も<rt></rt></ruby>しないでその場<ruby>を<rt></rt></ruby>離<ruby>れる<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Ketika menyadari adanya situasi abnormal, apa yang pertama kali harus dilakukan?"
+  },
+  {
+    "t": "食<ruby>品<rt>ひん</rt></ruby>製<ruby>造<rt>ぞう</rt></ruby>工<ruby>場<rt>じょう</rt></ruby>で最も多<ruby>く<rt></rt></ruby>起<ruby>きる<rt></rt></ruby>労<ruby>働<rt>どう</rt></ruby>災<ruby>害<rt>がい</rt></ruby>の順<ruby>番<rt>ばん</rt></ruby>はどれですか。",
+    "p": [
+      "①転<ruby>倒<rt>とう</rt></ruby>、②切<ruby>れ<rt></rt></ruby>・こすれ、③はさまれ・巻<ruby>き<rt></rt></ruby>込<ruby>まれ<rt></rt></ruby>",
+      "①転<ruby>倒<rt>とう</rt></ruby>、②はさまれ・巻<ruby>き<rt></rt></ruby>込<ruby>まれ<rt></rt></ruby>、③切<ruby>れ<rt></rt></ruby>・こすれ",
+      "①はさまれ・巻<ruby>き<rt></rt></ruby>込<ruby>まれ<rt></rt></ruby>、②転<ruby>倒<rt>とう</rt></ruby>、③切<ruby>れ<rt></rt></ruby>・こすれ"
+    ],
+    "b": 1,
+    "m": "Manakah urutan kecelakaan kerja yang paling sering terjadi di pabrik pembuatan makanan?"
+  },
+  {
+    "t": "5S活<ruby>動<rt>どう</rt></ruby>の中<ruby>の<rt></rt></ruby>「整<ruby>頓<rt>とん</rt></ruby>」は、どのような活<ruby>動<rt>どう</rt></ruby>ですか。正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "職<ruby>場<rt>ば</rt></ruby>や工<ruby>場<rt>じょう</rt></ruby>などのゴミを捨<ruby>てる<rt></rt></ruby>",
+      "決<ruby>め<rt></rt></ruby>られたことを常<ruby>に<rt></rt></ruby>守<ruby>って<rt></rt></ruby>実<ruby>行<rt>こう</rt></ruby>する",
+      "作<ruby>業<rt>ぎょう</rt></ruby>道<ruby>具<rt>ぐ</rt></ruby>や材<ruby>料<rt>りょう</rt></ruby>の置<ruby>き<rt></rt></ruby>場<ruby>所<rt>しょ</rt></ruby>を決<ruby>めて<rt></rt></ruby>おく"
+    ],
+    "b": 2,
+    "m": "Seperti apa aktivitas \"Seiton (Rapi)\" dalam aktivitas 5S? Pilih satu yang benar."
+  },
+  {
+    "t": "ノロウイルスによる食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>の<rt></rt></ruby>主<ruby>な<rt></rt></ruby>原<ruby>因<rt>いん</rt></ruby>になる食<ruby>品<rt>ひん</rt></ruby>は何ですか。正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "卵<ruby>卵<rt>たまご</rt></ruby>、鶏<ruby>肉<rt>にく</rt></ruby>",
+      "米<ruby>米<rt>こめ</rt></ruby>、麦<ruby>麦<rt>むぎ</rt></ruby>、豆<ruby>豆<rt>まめ</rt></ruby>",
+      "牡<ruby>蠣<rt>かき</rt></ruby>などの二<ruby>枚<rt>まい</rt></ruby>貝<ruby>貝<rt>がい</rt></ruby>"
+    ],
+    "b": 2,
+    "m": "Apa makanan yang menjadi penyebab utama keracunan makanan akibat Norovirus? Pilih satu yang benar."
+  },
+  {
+    "t": "食<ruby>品<rt>ひん</rt></ruby>工<ruby>場<rt>じょう</rt></ruby>で食<ruby>中<rt>ちゅう</rt></ruby>毒<ruby>を<rt></rt></ruby>予<ruby>防<rt>ぼう</rt></ruby>するために必<ruby>要<rt>よう</rt></ruby>なことは何ですか。正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "p": [
+      "生<ruby>の<rt></rt></ruby>牡<ruby>蠣<rt>かき</rt></ruby>や生<ruby>肉<rt>にく</rt></ruby>は、室<ruby>温<rt>おん</rt></ruby>で保<ruby>管<rt>かん</rt></ruby>する",
+      "器<ruby>具<rt>ぐ</rt></ruby>、容<ruby>器<rt>き</rt></ruby>、装<ruby>置<rt>ち</rt></ruby>などは、常<ruby>に<rt></rt></ruby>清<ruby>潔<rt>けつ</rt></ruby>にする",
+      "加<ruby>熱<rt>ねつ</rt></ruby>した食<ruby>品<rt>ひん</rt></ruby>は、できるだけゆっくり冷<ruby>やす<rt></rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Apa yang diperlukan untuk mencegah keracunan makanan di pabrik makanan? Pilih satu yang benar."
+  },
+  {
+    "t": "受<ruby>け<rt></rt></ruby>入<ruby>れ<rt></rt></ruby>検<ruby>査<rt>さ</rt></ruby>を行<ruby>う<rt></rt></ruby>とき、どの情<ruby>報<rt>ほう</rt></ruby>を確<ruby>認<rt>にん</rt></ruby>するべきですか。",
+    "p": [
+      "納<ruby>品<rt>ひん</rt></ruby>書と価<ruby>格<rt>かく</rt></ruby>",
+      "原<ruby>材<rt>ざい</rt></ruby>料の目<ruby>見<rt>み</rt></ruby>た目や臭<ruby>い<rt></rt></ruby>、期<ruby>限<rt>げん</rt></ruby>、保<ruby>存<rt>ぞん</rt></ruby>方<ruby>法<rt>ほう</rt></ruby>",
+      "商<ruby>品<rt>ひん</rt></ruby>の宣<ruby>伝<rt>でん</rt></ruby>広<ruby>告<rt>こく</rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Saat melakukan pemeriksaan penerimaan barang (inspeksi), informasi apa saja yang harus dipastikan?"
+  },
+  {
+    "t": "脚<ruby>立<rt>たつ</rt></ruby>に乗<ruby>り<rt></rt></ruby>、天<ruby>井<rt>じょう</rt></ruby>近<ruby>く<rt></rt></ruby>のボルトを締<ruby>め<rt></rt></ruby>た時、脚<ruby>立<rt>たつ</rt></ruby>から落<ruby>ちそうに<rt></rt></ruby>なりました。この事<ruby>故<rt>こ</rt></ruby>の原<ruby>因<rt>いん</rt></ruby>は何ですか。正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "img": "https://lh3.googleusercontent.com/d/1mtvXcNHGWE0ZxO3ymINFRv_mZARulkWT",
+    "p": [
+      "脚<ruby>立<rt>たつ</rt></ruby>に乗<ruby>って<rt></rt></ruby>から、保<ruby>護<rt>ご</rt></ruby>具を設<ruby>備<rt>び</rt></ruby>しなかったこと",
+      "ボルトを締<ruby>める<rt></rt></ruby>ときに力<ruby>を<rt></rt></ruby>入<ruby>れすぎた<rt></rt></ruby>こと",
+      "ダンスをしながら作<ruby>業<rt>ぎょう</rt></ruby>したこと"
+    ],
+    "b": 1,
+    "m": "Saat menaiki tangga lipat (kaki tiga) dan mengencangkan baut dekat langit-langit, hampir saja terjatuh dari tangga. Apa penyebab kecelakaan ini? Pilih satu yang benar."
+  },
+  {
+    "t": "フレコンバッグをクレーンでつり上<ruby>げ<rt></rt></ruby>、荷<ruby>台<rt>だい</rt></ruby>から降<ruby>ろそうと<rt></rt></ruby>したときに、フレコンバッグが揺<ruby>れて<rt></rt></ruby>身<ruby>体<rt>たい</rt></ruby>に当<ruby>たり<rt></rt></ruby>、荷<ruby>台<rt>だい</rt></ruby>から落<ruby>ちそうに<rt></rt></ruby>なりました。この事<ruby>故<rt>こ</rt></ruby>を防<ruby>ぐ<rt></rt></ruby>ために、どうしたらいいですか。最も正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "img": "https://lh3.googleusercontent.com/d/1MuA0pO3-FHdliz0yTfuyde0chpJFUUPj",
+    "p": [
+      "クレーンを使<ruby>う<rt></rt></ruby>時の自<ruby>分<rt>ぶん</rt></ruby>の立<ruby>つ<rt></rt></ruby>場<ruby>所<rt>しょ</rt></ruby>について、十<ruby>分<rt>ぶん</rt></ruby>な労<ruby>働<rt>どう</rt></ruby>安<ruby>全<rt>ぜん</rt></ruby>教<ruby>育<rt>いく</rt></ruby>を行<ruby>う<rt></rt></ruby>こと",
+      "クレーンでフレコンバッグをつり上<ruby>げる<rt></rt></ruby>際、ワイヤーにたるみがないことを確<ruby>認<rt>にん</rt></ruby>せずにフックにかけないこと",
+      "フレコンバッグをつり上<ruby>げる<rt></rt></ruby>際、フレコンバッグを避<ruby>けない<rt></rt></ruby>こと"
+    ],
+    "b": 0,
+    "m": "Saat mengangkat flecon bag (flexible container bag) menggunakan derek (crane) dan hendak menurunkannya dari bak muatan, flecon bag tersebut bergoyang dan mengenai tubuh, sehingga hampir terjatuh dari bak muatan. Apa yang harus dilakukan untuk mencegah kecelakaan ini? Pilih satu yang paling benar."
+  },
+  {
+    "t": "安<ruby>全<rt>ぜん</rt></ruby>カバーのないスライサーで肉<ruby>を<rt></rt></ruby>切<ruby>って<rt></rt></ruby>いる時、回<ruby>転<rt>てん</rt></ruby>刃<ruby>で<rt></rt></ruby>右<ruby>手<rt>て</rt></ruby>を切<ruby>りそうに<rt></rt></ruby>なりました。事<ruby>故<rt>こ</rt></ruby>を防<ruby>ぐ<rt></rt></ruby>には、安<ruby>全<rt>ぜん</rt></ruby>カバーをつけるほかに、どのような肉<ruby>の<rt></rt></ruby>持<ruby>ち<rt></rt></ruby>方<ruby>が<rt></rt></ruby>いいですか。正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "img": "https://lh3.googleusercontent.com/d/1PvmTGqG3x-77rviGucvz3_q-z4kfX3By",
+    "p": [
+      "二<ruby>人<rt>にん</rt></ruby>で持<ruby>つ<rt></rt></ruby>",
+      "右<ruby>手<rt>て</rt></ruby>だけで持<ruby>つ<rt></rt></ruby>",
+      "道<ruby>具<rt>ぐ</rt></ruby>を 使<ruby>って<rt></rt></ruby>持<ruby>つ<rt></rt></ruby>"
+    ],
+    "b": 2,
+    "m": "Saat memotong daging dengan mesin pengiris (slicer) tanpa penutup pengaman, tangan kanan hampir terpotong oleh pisau berputar. Untuk mencegah kecelakaan, selain memasang penutup pengaman, bagaimana cara memegang daging yang baik? Pilih satu yang benar."
+  },
+  {
+    "t": "下<ruby>は<rt></rt></ruby>ソーセージ1セット（6本<ruby>本<rt>ほん</rt></ruby>）の配<ruby>合<rt>ごう</rt></ruby>例<ruby>です<rt></rt></ruby>。この配<ruby>合<rt>ごう</rt></ruby>に従<ruby>う<rt></rt></ruby>と、豚<ruby>ひき<rt></rt></ruby>肉<ruby>6kg<rt></rt></ruby>からどれだけのソーセージを作<ruby>れる<rt></rt></ruby>か。\n豚<ruby>ひき<rt></rt></ruby>肉<ruby>：300g<rt></rt></ruby>\n塩<ruby>：6g<rt></rt></ruby>\n玉<ruby>ねぎ<rt></rt></ruby>：20g",
+    "p": [
+      "20本<ruby>本<rt>ほん</rt></ruby>",
+      "120本<ruby>本<rt>ほん</rt></ruby>",
+      "180本<ruby>本<rt>ほん</rt></ruby>"
+    ],
+    "b": 1,
+    "m": "Di bawah ini adalah contoh formula untuk 1 set sosis (6 buah). Jika mengikuti formula ini, berapa banyak sosis yang dapat dibuat dari 6kg daging babi cincang?\nDaging babi cincang: 300g\nGaram: 6g\nBawang bombay: 20g"
+  },
+  {
+    "t": "10％の次<ruby>亜<rt>あ</rt></ruby>塩<ruby>素<rt>そ</rt></ruby>酸<ruby>ナトリウム<rt></rt></ruby>（NaClO）の溶<ruby>液<rt>えき</rt></ruby>があります。5mlの溶<ruby>液<rt>えき</rt></ruby>を使<ruby>用<rt>よう</rt></ruby>して、200ppmの次<ruby>亜<rt>あ</rt></ruby>塩<ruby>素<rt>そ</rt></ruby>酸<ruby>ナトリウム<rt></rt></ruby>（NaClO）を作<ruby>る<rt></rt></ruby>時<ruby>に<rt></rt></ruby>、どれぐらいの溶<ruby>液<rt>えき</rt></ruby>になるか、正<ruby>しい<rt></rt></ruby>ものを一つ選<ruby>び<rt></rt></ruby>なさい。\n※200ppm＝0.02％",
+    "p": [
+      "2L",
+      "2.5L",
+      "3L"
+    ],
+    "b": 1,
+    "m": "Terdapat larutan natrium hipoklorit (NaClO) 10%. Jika menggunakan 5ml larutan tersebut untuk membuat natrium hipoklorit (NaClO) 200ppm, berapa volume total larutan yang akan dihasilkan? Pilih satu yang benar.\n*200ppm = 0.02%"
+  },
+  {
+    "t": "「落<ruby>ちる<rt></rt></ruby>」という事<ruby>故<rt>こ</rt></ruby>が起<ruby>きた<rt></rt></ruby>ときに、どのようなけがをすることがありますか。",
+    "p": [
+      "足<ruby>を<rt></rt></ruby>捻<ruby>挫<rt>ざ</rt></ruby>したり、体<ruby>を<rt></rt></ruby>打<ruby>ったり<rt></rt></ruby>、手<ruby>を<rt></rt></ruby>ついて骨<ruby>を<rt></rt></ruby>折<ruby>ったり<rt></rt></ruby>する",
+      "目<ruby>に<rt></rt></ruby>砂<ruby>が<rt></rt></ruby>入<ruby>ったり<rt></rt></ruby>、髪<ruby>が<rt></rt></ruby>抜<ruby>けたり<rt></rt></ruby>する",
+      "靴<ruby>が<rt></rt></ruby>汚<ruby>れたり<rt></rt></ruby>、服<ruby>が<rt></rt></ruby>破<ruby>れたり<rt></rt></ruby>する"
+    ],
+    "b": 0,
+    "m": "Ketika terjadi kecelakaan \"terjatuh (dari tempat tinggi)\", cedera seperti apa yang bisa dialami?"
+  },
+  {
+    "t": "フォークリフトが通<ruby>る<rt></rt></ruby>とき、どうすればいいですか。",
+    "p": [
+      "運<ruby>転<rt>てん</rt></ruby>する人<ruby>と<rt></rt></ruby>目<ruby>を<rt></rt></ruby>合<ruby>わせて<rt></rt></ruby>確<ruby>認<rt>にん</rt></ruby>しながら歩<ruby>く<rt></rt></ruby>",
+      "急<ruby>いで<rt></rt></ruby>走<ruby>り<rt></rt></ruby>抜<ruby>ける<rt></rt></ruby>",
+      "通<ruby>路<rt>ろ</rt></ruby>を無<ruby>視<rt>し</rt></ruby>して歩<ruby>く<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Apa yang harus dilakukan saat forklift lewat?"
+  },
+  {
+    "t": "アニサキスが寄<ruby>生<rt>せい</rt></ruby>している魚<ruby>介<rt>かい</rt></ruby>類<ruby>として<rt></rt></ruby>正<ruby>しい<rt></rt></ruby>ものはどれですか。",
+    "p": [
+      "サバ、イワシ、サケ、アジ、イカ",
+      "タコ、エビ、クラゲ、カニ",
+      "マグロ、カツオ、フグ"
+    ],
+    "b": 0,
+    "m": "Manakah produk laut yang benar sebagai tempat parasit Anisakis hidup?"
+  },
+  {
+    "t": "パンが入<ruby>った<rt></rt></ruby>箱<ruby>を<rt></rt></ruby>両<ruby>手<rt>て</rt></ruby>で持<ruby>ち<rt></rt></ruby>、トラックに向<ruby>かって<rt></rt></ruby>駐<ruby>車<rt>しゃ</rt></ruby>場<ruby>を<rt></rt></ruby>歩<ruby>いていた<rt></rt></ruby>際、足<ruby>元<rt>もと</rt></ruby>に置<ruby>かれていた<rt></rt></ruby>空<ruby>箱<rt>ばこ</rt></ruby>に気<ruby>づかず<rt></rt></ruby>、つまずき転<ruby>倒<rt>とう</rt></ruby>しそうになりました。この事<ruby>故<rt>こ</rt></ruby>を防<ruby>ぐ<rt></rt></ruby>ために、どうしたらいいですか。間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。",
+    "img": "https://lh3.googleusercontent.com/d/1H6ZA2SesVjzgT7IwYEBp8rJjV2xfseZa",
+    "p": [
+      "通<ruby>路<rt>ろ</rt></ruby>に物<ruby>を<rt></rt></ruby>置<ruby>きっぱなしに<rt></rt></ruby>して、箱<ruby>を<rt></rt></ruby>いくつ持<ruby>っても<rt></rt></ruby>いいです",
+      "作<ruby>業<rt>ぎょう</rt></ruby>で使<ruby>用<rt>よう</rt></ruby>するものであっても、通<ruby>路<rt>ろ</rt></ruby>に物<ruby>を<rt></rt></ruby>置<ruby>きっぱなしに<rt></rt></ruby>せず、作<ruby>業<rt>ぎょう</rt></ruby>開<ruby>始<rt>し</rt></ruby>前<ruby>には<rt></rt></ruby>通<ruby>路<rt>ろ</rt></ruby>の安<ruby>全<rt>ぜん</rt></ruby>を確<ruby>認<rt>にん</rt></ruby>すること",
+      "箱<ruby>を<rt></rt></ruby>重<ruby>ねて<rt></rt></ruby>運<ruby>ぶ<rt></rt></ruby>際は、前<ruby>が<rt></rt></ruby>見<ruby>える<rt></rt></ruby>ように箱<ruby>を<rt></rt></ruby>持<ruby>つ<rt></rt></ruby>"
+    ],
+    "b": 0,
+    "m": "Saat berjalan di tempat parkir menuju truk sambil membawa kotak berisi roti dengan kedua tangan, pekerja tidak menyadari adanya kotak kosong yang ditaruh di kaki, sehingga tersandung dan hampir terjatuh. Untuk mencegah kecelakaan ini, apa yang sebaiknya dilakukan? Pilih satu yang salah."
+  },
+  {
+    "t": "以<ruby>下<rt>か</rt></ruby>の図<ruby>は<rt></rt></ruby>、A子<ruby>さん<rt></rt></ruby>がお湯<ruby>を<rt></rt></ruby>捨<ruby>て<rt></rt></ruby>、転<ruby>倒<rt>とう</rt></ruby>しそうな様<ruby>子<rt>す</rt></ruby>です。それについて、間<ruby>違<rt>ちが</rt></ruby>っているものを一つ選<ruby>び<rt></rt></ruby>なさい。\n※（図<ruby>・<rt></rt></ruby>写<ruby>真<rt>しん</rt></ruby>は後<ruby>で<rt></rt></ruby>追<ruby>加<rt>か</rt></ruby>）",
+    "img": "https://lh3.googleusercontent.com/d/1yixZ8xh6YEEnK8OvKWLFwpyM2kpZddvg",
+    "p": [
+      "熱<ruby>湯<rt>とう</rt></ruby>の入<ruby>った<rt></rt></ruby>大<ruby>鍋<rt>なべ</rt></ruby>は二<ruby>人<rt>in</rt></ruby>で運<ruby>んだ<rt></rt></ruby>ほうがいい",
+      "運<ruby>ぶ<rt></rt></ruby>ときにゴム手<ruby>袋<rt>ぶくろ</rt></ruby>、前<ruby>掛け<rt>かけ</rt></ruby>、メガネなどの保<ruby>護<rt>ご</rt></ruby>具をつける",
+      "作<ruby>業<rt>ぎょう</rt></ruby>靴<ruby>さえ<rt></rt></ruby>着<ruby>けば<rt></rt></ruby>、一<ruby>人<rt>り</rt></ruby>でお湯<ruby>入り<rt>いり</rt></ruby>の大<ruby>鍋<rt>なべ</rt></ruby>を運<ruby>んでも<rt></rt></ruby>問<ruby>題<rt>だい</rt></ruby>はない"
+    ],
+    "b": 2,
+    "m": "Gambar berikut menunjukkan situasi di mana Nona A sedang membuang air panas dan hampir terjatuh. Mengenai hal tersebut, pilih satu yang salah.\n* (Gambar/Foto akan ditambahkan nanti)"
+  }
+];
+
 const paket10 = [];
 
 
@@ -3224,6 +4041,7 @@ function tampilkanReview() {
   reviewHTML += `<button class="btn" onclick="end()" style="width:100%; margin-top:20px; background:#7f8c8d;">TUTUP REVIEW</button></div>`;
   document.getElementById("hasil").innerHTML = reviewHTML;
 }
+
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar-konten");
   const icon = document.getElementById("icon-toggle");
